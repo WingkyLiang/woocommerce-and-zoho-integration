@@ -73,7 +73,7 @@ app.get('/image/:id', async (req, res) => {
 app.post('/orderCreated', async (req, res) => {
   // pool = pool || (await createPool())
   const salesOrder = {
-    siteName:"woocommerce",
+    siteName:"wordpress",
     orderID:req.body.data.id
   }
   //console.log(req.body)
@@ -90,7 +90,7 @@ app.post('/orderCreated', async (req, res) => {
 app.post('/salesOrder/statusUpdated', async (req, res) => {
   // pool = pool || (await createPool())
   const salesOrder = {
-    siteName:"woocommerce",
+    siteName:"wordpress",
     orderID:req.body.data.id
   }
   console.log(req.body)
@@ -107,7 +107,7 @@ app.post('/salesOrder/statusUpdated', async (req, res) => {
 app.post('/salesOrder/updated', async (req, res) => {
   // pool = pool || (await createPool())
   const salesOrder = {
-    siteName:"woocommerce",
+    siteName:"wordpress",
     orderID:req.body.data.id
   }
   const scope = req.body.scope.split('/')[2]??null
